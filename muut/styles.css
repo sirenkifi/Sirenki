@@ -1,6 +1,7 @@
 :root {
     --navbar-width: 20vw;
     --hover-color: hsl(292, 80%, 59%);
+    --footer-height: 70px;
 }
 
 html {
@@ -20,24 +21,37 @@ body {
     margin: 0px;    
 }
 
+.contenttemplate {
+    display: grid;
+    grid-template-rows: 1fr var(--footer-height);
+}
+
 .navbar {
     position: fixed;
-    left: 0px;
-    top: 0px;
     width: var(--navbar-width);
     height: 100vh;
     background-color: #f3e5f5;
     display: grid;
     grid-template-rows: 20% 10% 70%;
     justify-items: center;
-    padding-top: 15px;
-    gap: 10px;
+    padding-top: 30px;
+    gap: 40px;
 }
 
 .navbar img {
     width: 50%;
     left: calc(var(--navbar-width) / 2);
     border-radius: 10px;
+}
+
+.footer {
+    background-color: #f294d1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    height: var(--footer-height);
+    justify-content: center;
 }
 
 .linkit {
@@ -67,9 +81,9 @@ body {
 
 .content h1 {
     padding: 30px;
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 4rem;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 5rem;
     text-align: center;
 }
 
@@ -96,7 +110,17 @@ body {
     color: white;
 }
 
-.teksti p {
+p {
     margin: 0px;
 }
 
+.highlight {
+    background-color: hsla(0, 0%, 0%, 0.4);
+    color: white;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+.hidden {
+    display: none;
+}
