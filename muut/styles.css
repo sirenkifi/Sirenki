@@ -1,0 +1,102 @@
+:root {
+    --navbar-width: 20vw;
+    --hover-color: hsl(292, 80%, 59%);
+}
+
+html {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    gap: 0px;
+}
+
+.template {
+    display: grid;
+    grid-template-columns: var(--navbar-width) 1fr;
+    gap: 0px;
+    margin: 0px;    
+}
+
+.navbar {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: var(--navbar-width);
+    height: 100vh;
+    background-color: #f3e5f5;
+    display: grid;
+    grid-template-rows: 20% 10% 70%;
+    justify-items: center;
+    padding-top: 15px;
+    gap: 10px;
+}
+
+.navbar img {
+    width: 50%;
+    left: calc(var(--navbar-width) / 2);
+    border-radius: 10px;
+}
+
+.linkit {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.linkit a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.linkit a:hover {
+    color: var(--hover-color);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../kuvat/metsa.jpg");
+    background-size: cover;
+}
+
+.content h1 {
+    padding: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.esittely {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    padding: 50px;
+    background-color: hsl(0, 0%, 0%, 40%);
+}
+
+.esittely img {
+    padding-right: 20px;
+}
+
+
+.teksti {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    font-size: 1.1rem;
+    gap: 15px;
+    color: white;
+}
+
+.teksti p {
+    margin: 0px;
+}
+

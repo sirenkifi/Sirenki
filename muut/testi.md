@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sirenki</title>
+    <meta name="description" content="Hoitoa Vihannissa. Hierontaa ja kasvohoitoja.">
+</head>
+<body>
+    <h1>Tämä on näkyvää sisältöä</h1>
+    <p>Tervetuloa verkkosivulleni.</p>
+</body>
+</html>
